@@ -7,3 +7,7 @@
   gap: 0.5rem;
 }
 
+.container-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
