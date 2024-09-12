@@ -22,7 +22,7 @@ h1, h2 {
 .hero-container {
   position: relative;
 
-  height: 70vh;
+  height: 50vh;
 }
 .hero-image {
   /* position: absolute; */
@@ -38,6 +38,7 @@ h1, h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
 
   color: white;
 }
