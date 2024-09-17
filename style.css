@@ -15,6 +15,28 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: orange; */
+}
+
+@media (width >= 1000px) {
+  main {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+@media (700px < width < 1200px) {
+  main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+
 h1, h2 {
   text-align: center;
 }
@@ -48,12 +70,31 @@ h1, h2 {
   border: solid green;
 }
 
+.fruits-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  justify-content: center;
+}
+
 section {
   width: 30rem;
-  background-color: #ffeced;
+  background-color: #f6d0f1;
   border-radius: 1rem;
   padding: 0 0.5rem;
+
+  max-width: 15rem;
+
+  /* transition: all 2s; */
+  transition: background-color 0.5s, box-shadow 0.1s;
 }
+section:hover {
+  background-color: cyan;
+  box-shadow: 10px 5px 5px red;
+}
+
 
 li {
   color: green;
